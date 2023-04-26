@@ -1,0 +1,53 @@
+// :root {
+//   --isFixed: sticky;
+//   --isTop: true;
+// }
+
+// header {
+//   overflow-x: clip !important;
+// }
+.active {
+  // @if var(--isTop) == true {
+  //   background-color: #f7d7b8;
+  // } @else {
+  //   background-color: #000000;
+  // }
+  background-color: #f7d7b8;
+  padding: 20px;
+  justify-content: space-between;
+  top: 0;
+  transition: 1s;
+  position: sticky;
+  z-index: 15 !important;
+  width: 100%;
+}
+
+.hidden {
+  transform: translateY(-100%);
+}
+
+h1 {
+  margin: 0;
+  font-size: 25px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a79586 !important;
+  transition-duration: 2s;
+}

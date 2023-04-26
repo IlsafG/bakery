@@ -1,0 +1,48 @@
+.dotes {
+  font-size: 35px;
+  padding-bottom: 20px;
+  position: center;
+}
+.fade {
+  transition: opacity 4.5s;
+}
+
+.fade-in {
+  opacity: 0;
+}
+
+.fade-out {
+  opacity: 1;
+}
+
+.lAct {
+  // * {
+  //   animation: change-opticy 10s;
+  // }
+  transform: translate(-200px, 0px);
+  transition-duration: 9s;
+  transition-timing-function: cubic-bezier(0.04, 0.88, 1, 0.15);
+}
+.rAct {
+  // * {
+  //   animation: change-opticy 10s;
+  // }
+  transform: translate(200px, 0px);
+  transition-duration: 9s;
+  transition-timing-function: cubic-bezier(0.04, 0.88, 1, 0.15);
+}
+
+// @keyframes change-opticy {
+//   0% {
+//     opacity: 0;
+//   }
+//   10% {
+//     opacity: 0.1;
+//   }
+//   80% {
+//     opacity: 1;
+//   }
+//   100% {
+//     opacity: 0;
+//   }
+// }
