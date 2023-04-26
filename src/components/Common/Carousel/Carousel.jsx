@@ -3,7 +3,7 @@ import "./Carousel.scss";
 
 const Carousel = ({ items, interval }) => {
   const [index, setIndex] = useState(0);
-  const [className, setClassName] = useState("rAct");
+  const [className, setClassName] = useState("");
   const [isVisible, setIsVisible] = useState("fade fade-out");
 
   useEffect(() => {
