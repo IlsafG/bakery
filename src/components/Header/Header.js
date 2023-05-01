@@ -1,27 +1,15 @@
 import React, { useState, useEffect } from "react";
 import "./Header.scss";
-
-// document.documentElement.style.setProperty("--scrollY", window.scrollY);
-
-// if (10 < window.scrollY < 409) {
-//   document.documentElement.style.setProperty("--isFixed", "relative");
-//   document.documentElement.style.setProperty("--isTop", "true");
-//   alert("z nen");
-// } else {
-//   document.documentElement.style.setProperty("--isFixed", "sticky");
-//   document.documentElement.style.setProperty("--isTop", "false");
-// }
-
-// var root = document.querySelector(":root");
-// var rootStyles = getComputedStyle(root);
-// var scrollY = rootStyles.getPropertyValue("--isTop");
-// // root.style.setProperty("--scrollY", 20);
-// alert(scrollY);
+import { useTranslation } from "react-i18next";
 
 function Header() {
   const [show, setShow] = useState(true);
+  const [lan, setlan] = useState("en");
   const [lastScrollY, setLastScrollY] = useState(0);
-
+  const { t, i18n } = useTranslation();
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
   const controlNavbar = () => {
     if (typeof window !== "undefined") {
       if (window.scrollY < lastScrollY) {
@@ -32,6 +20,17 @@ function Header() {
       setLastScrollY(window.scrollY);
     }
   };
+  const LanF = () => {
+    if (lan == "ru") {
+      setlan("en");
+      changeLanguage("en");
+    } else {
+      setlan("ru");
+      changeLanguage("ru");
+    }
+  };
+
+  // alert(lan);
   useEffect(() => {
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", controlNavbar);
@@ -48,20 +47,32 @@ function Header() {
   return (
     <header className={`active ${show && window.scrollY > 98 && "hidden"}`}>
       <div>
-        <h1>Пекарня "Вкуснятина"</h1>
+        <h1 className="Name">{t("header.h1")}</h1>
+        {/* <h1>Пекарня "Вкуснятина"</h1> */}
         <nav>
           <ul>
             <li>
-              <a href="#hero">Главная</a>
+              <div className="innerColor">
+                <a href="#hero">{t("header.hero")}</a>
+              </div>
             </li>
             <li>
-              <a href="#about">О нас</a>
+              <div className="innerColor">
+                <a href="#about">{t("header.about")}</a>
+              </div>
             </li>
             <li>
-              <a href="#menu">Меню</a>
+              <div className="innerColor">
+                <a href="#menu">{t("header.menu")}</a>
+              </div>
             </li>
             <li>
-              <a href="#contact">Контакты</a>
+              <div className="innerColor">
+                <a href="#contact">{t("header.contact")}</a>
+              </div>
+            </li>
+            <li onClick={() => LanF()}>
+              <div className="lan innerColor">{lan}</div>
             </li>
           </ul>
         </nav>

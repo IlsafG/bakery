@@ -44,8 +44,10 @@ const Carousel = ({ items, interval }) => {
     // <div className="com">
     // <div className="leftBlock"></div>
     <div>
-      <div className={className}>
-        <span className={isVisible}>{items[index]}</span>
+      <div className="text">
+        <div className={className}>
+          <span className={isVisible}>{items[index]}</span>
+        </div>
       </div>
       <div className="dotes">
         {items.map((item, dotIndex) => (
@@ -55,7 +57,8 @@ const Carousel = ({ items, interval }) => {
             style={{
               cursor: "pointer",
               margin: "0 5px",
-              font_size: index === dotIndex ? "40px" : "20px",
+              color: index === dotIndex ? "grey" : "black",
+              transition: "1s",
             }}
           >
             &bull;

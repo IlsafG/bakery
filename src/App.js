@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import "./App.scss";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
@@ -16,7 +16,6 @@ function App() {
       <Menu />
       <Contact />
       <Footer />
-      <div class="follow-cursor"></div>
     </div>
   );
 }

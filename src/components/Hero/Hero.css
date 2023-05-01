@@ -1,10 +1,21 @@
 .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
   /* background-image: url("/public/hero.jpg"); */
   background-size: cover;
   background-position: center;
   color: #fff;
   padding: 100px;
   text-align: center;
+  background-attachment: fixed;
+  /* размещаем её по центру */
+  background-position: center;
+  /* выключаем повторения картинки */
+  background-repeat: no-repeat;
+  /* подгоняем масштаб картинки под размер блока, в котором она лежит */
+  background-size: cover;
   animation: change-background 10s linear infinite;
   -webkit-animation: change-background 10s linear infinite;
   transition: 3;
@@ -22,20 +33,21 @@
 
 @keyframes change-background {
   0% {
-    background-image: url("/public/hero.jpg");
+    background-image: url("/public/img/hero.jpg");
   }
   50% {
-    background-image: url("/public/hero2.jpg");
+    background-image: url("/public/img/hero2.jpg");
   }
   75% {
-    background-image: url("/public/hero3.jpg");
+    background-image: url("/public/img/hero3.jpg");
   }
   100% {
-    background-image: url("/public/hero.jpg");
+    background-image: url("/public/img/hero.jpg");
   }
 }
 
 .rectangle {
+  border-radius: 5%;
   padding: 5%;
   margin: auto;
   background: rgba(0, 0, 0, 0.7);

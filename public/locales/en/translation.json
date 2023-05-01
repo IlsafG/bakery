@@ -1,0 +1,51 @@
+{
+  "header": {
+    "h1": "Bakery 'Yummy'",
+    "hero": "Main",
+    "about": "About",
+    "menu": "Menu",
+    "contact": "Contacts"
+  },
+  "hero": {
+    "h2": "Welcome to our bakery!",
+    "disk": "We offer fresh pastries prepared with love and care for quality.",
+    "order": "To order"
+  },
+  "about": {
+    "title": "About us",
+    "s1": "High-quality baked goods: The bakery can boast high-quality products thanks to the use of the best ingredients, traditional recipes and formulas, as well as the use of advanced technologies in production.",
+    "s2": "Variety of products: The bakery can offer a wide selection of products, from bread and pies to cakes and cookies, which will attract customers with different preferences and allow to profit from different consumer groups.",
+    "s3": "Product branding: The bakery can create a recognizable brand by creating unique designs, logos, and packaging for its products, making it more attractive and distinguishable on the market.",
+    "s4": "Customer base: The bakery can create a base of regular customers, provide excellent service, as well as implement loyalty programs and offer discounts.",
+    "s5": "Business expansion: The bakery can expand its business by adding new products or services, such as coffee, lunch dishes, catering, etc.",
+    "s6": "Participation in local events: The bakery can participate in local events such as farmers' markets, festivals, and flea markets to expand its customer base and introduce its products to a wide audience.",
+    "s7": " Reviews and ratings: The bakery can receive good reviews and ratings on online platforms such as Yelp and Google My Business, which will increase its visibility and attract new customers."
+  },
+  "PS": {
+    "t1": "Bread",
+    "t2": "Croissants",
+    "t3": "Pies",
+    "t4": "Tarts",
+    "t5": "Cookies",
+    "t6": "Cupcakes",
+    "t7": "Cheesecakes",
+    "t8": "Drinks",
+
+    "P1": "Freshly baked bread is perfect for any dish or just for a piece of pleasure. You can choose from white, rye, with bran or the addition of seeds and nuts.",
+    "P2": "Croissants are light puff pastry baked until golden brown. Croissants can be with various fillings, for example, with chocolate, nuts or cheese.",
+    "P3": "Pies - pies are a wonderful addition to your lunch or dinner. You can add Apple pie, meat and potato pie, cottage cheese pie or fruit pie to the menu.",
+    "P4": "Tender dough, air cream and fresh fruits or berries provide an unforgettable taste. You can add tarts with apples and cinnamon, strawberries, cherries or lemon cream to the menu.",
+    "P5": "Cookies - fragrant homemade cookies with nuts, chocolate or ginger will be a wonderful treat at any time of the day.",
+    "P6": "Cupcakes are a sweet snack for any occasion. You can add banana cupcake, chocolate cupcake, carrot cupcake or pumpkin cupcake to the menu.",
+    "P7": "Cheesecakes are the real lot of professionals. Cheesecake with various additives - fruits, nuts, or chocolate - will be an unforgettable taste experience.",
+    "P8": "Drinks - in the bakery you can order drinks suitable for any dish. You can add coffee, tea, hot chocolate or seasonal drinks to the menu.",
+
+    "B": "Order now!",
+    "al": "Sorry, feature not yet ready"
+  },
+  "contacts": {
+    "Tit": "Contacts",
+    "Sv": "You can contact us by phone or email:",
+    "Tl": "Phone: +7 (123) 456-78-90"
+  }
+}

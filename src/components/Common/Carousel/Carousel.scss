@@ -1,12 +1,16 @@
 .dotes {
   font-size: 35px;
-  padding-bottom: 20px;
+  padding-top: 130px;
   position: center;
+  transition: 5s;
 }
 .fade {
   transition: opacity 4.5s;
 }
-
+.text {
+  // width: 50vw;
+  height: 15vh;
+}
 .fade-in {
   opacity: 0;
 }
@@ -19,6 +23,7 @@
   // * {
   //   animation: change-opticy 10s;
   // }
+  height: 100px;
   transform: translate(-200px, 0px);
   transition-duration: 9s;
   transition-timing-function: cubic-bezier(0.04, 0.88, 1, 0.15);
@@ -27,6 +32,7 @@
   // * {
   //   animation: change-opticy 10s;
   // }
+  height: 100px;
   transform: translate(200px, 0px);
   transition-duration: 9s;
   transition-timing-function: cubic-bezier(0.04, 0.88, 1, 0.15);

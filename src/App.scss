@@ -1,31 +1,26 @@
 .App {
-  background-color: #f7d7b8;
+  background-color: #e7caa8;
   overflow-x: clip;
+  font-family: "Microsoft Sans Serif", Courier, monospace !important;
 }
-.follow-cursor {
-  display: block;
-  width: 24px;
-  height: 24px;
-  border: 1px solid #0d6efd;
-  border-radius: 50%;
-  transform: translateY(-50%) translateX(-50%); /* центрируем кружок */
-  position: absolute; /* задаём абсолютное позиционирование, чтобы элемент не влиял на остальные элементы и его можно было бы позиционировать следом за курсором */
-  z-index: 999; /* чтобы элемент был над остальными элементами */
-  pointer-events: none; /* чтобы сквозь элемент можно было взаимодействовать с элементами, находящимися под ним */
-  transition: width 0.64s, height 0.64s, border-radius 0.64s, background 0.64s;
+/* Ширина, цвет и стиль скроллбара */
+::-webkit-scrollbar {
+  width: 10px; /* ширина скроллбара */
 }
 
-/* Активный класс для кружка при наведении на ссылку */
-.follow-cursor_active {
-  height: 128px;
-  width: 128px;
-  border-width: 2px;
-  background: rgba(13, 110, 253, 0.32);
+/* Фон скроллбара */
+::-webkit-scrollbar-track {
+  background-color: #f4f4f4;
 }
 
-/* Скрываем декоративный элемент при ширине браузера меньше 992px */
-@media (max-width: 991.98px) {
-  .follow-cursor {
-    display: none;
-  }
+/* Штука, которую можно перетаскивать для прокрутки окна */
+::-webkit-scrollbar-thumb {
+  background-color: #dad7d7;
+  border-radius: 10px;
+  border: 2px solid #f4f4f4;
+}
+
+/* Если курсор находится на скроллбаре */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #753840;
 }
